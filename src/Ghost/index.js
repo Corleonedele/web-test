@@ -1,6 +1,5 @@
 import React from 'react'
-
-import "./ghost.module.css"
+import "./Ghost.css"
 
 
 export default function Ghost() {

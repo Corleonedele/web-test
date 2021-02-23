@@ -1,4 +1,5 @@
 .App {
+  background-color: black;
   text-align: center;
 }
 
@@ -69,3 +70,11 @@
   color: transparent;
 
   }
+  
+.ghost{
+  position:absolute;
+  width:200px;
+  left:50%;
+  margin-left:-100px;
+  background-size: 0%;
+}

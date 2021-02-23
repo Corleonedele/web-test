@@ -5,9 +5,9 @@
     border-radius: 70px 70px 0 0;
     position: relative;
     animation: floating 2s infinite ease-in-out; 
+    place-items: center;
 }
-
-@keyframe floating{
+@keyframes floating{
     50%{
         transform: translateY(-30px)
     }
@@ -78,7 +78,7 @@
 
 .feet{
     position: absolute;
-    width: 100px;
+    width: 140px;
     bottom: -20px;
     display: flex;
 }
