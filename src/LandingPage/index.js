@@ -1,6 +1,6 @@
 import React from 'react'
 import "./page.css"
-
+import wechat from "../Image/wechat.jpg"
 
 export default function Page() {
     return (
@@ -9,8 +9,6 @@ export default function Page() {
             <ul>
                 <li> <a class="obss-scroller" href="#section1">Who Am I</a> </li>
                 <li> <a class="obss-scroller" href="#section2">About Me</a> </li>
-                {/* <li> <a class="obss-scroller" href="#section3">Testimonails</a> </li> */}
-                {/* <li> <a class="obss-scroller" href="#section4">Our Teams</a> </li> */}
                 <li> <a class="obss-scroller" href="#section3">Contact Me</a> </li>
             </ul>
         </nav>
@@ -30,37 +28,10 @@ export default function Page() {
 
         <section id='section3'>
             <h1>Contance Me</h1>
-            <p>WeChat QQ Github Twitter Email Instangram</p>
+            <img id='contact-wechat-image'
+            src={wechat}/>
         </section>
-
-        {/* <section id='section4'>
-            <h1>My Life</h1>
-            <p>Welcome To Look The Guide For The Universe Roaming</p>
-        </section>
-
-        <section id='section5'>
-            <h1>My Life</h1>
-            <p>Welcome To Look The Guide For The Universe Roaming</p>
-        </section> */}
-
-        <script src="https://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
-        <script src="https://code.5g-o.com/wp-content/uploads/2021/01/init-scroller.js"></script> 
-
-        {/* script>
-        $(document).ready(function(){
-            $("section").height($(window).height());
-            onWindowRezise();
-            $(".obss-scroller").smoothScroller({
-                duration: 1000,
-                activeClass: "active"
-             });
-            });
-            var onWindowRezise = function() {
-            $(window).resize(function(evt){
-                $("section").height($(window).height());
-            });
-        }    
-        </script> */}
+        
         </body>
     )
 }
