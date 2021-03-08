@@ -39,46 +39,61 @@ nav a.active {
     background-size: cover;
     height: 100vh;
     background-position: center;
-    
 }
+
 #section2 {
     height: 100vh;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
 }
-#section3 {
 
+#section3 {
     background-size: cover;
-    height: 300vh;
+    height: 100vh;
     background-position: center;
 }
 
 
 section {
-    width: 100%;
     margin: 0;
     padding: 100px;
+    display: flex;
+    flex-direction: column;
 }   
     
-    p{
-        width: 40%;
-    }
+p{
+    width: 40%;
+    color: #fff;
+    font-size: 2em;
+    align-self: center;
+}
     
-    h1{
-        font-weight: 400;
-        font-size: 30px;
-    }
-
-
-h1 {
+h1{
+    font-weight: 400;
+    color: #fff;
+    font-size: 60px;
     margin: 5%;
     right: 50%;
 }
 
 #contact-wechat-image{
-margin: auto;
-width: 25ch;
-right: 25%;
+    margin: auto;
+    width: 25ch;
+    right: 25%;
+}
 
+
+#HZX{
+    width: 50vmin;
+    height: 50vmin;
+    object-fit: cover;
+}
+
+
+#HZX-container{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: space-evenly;
 }

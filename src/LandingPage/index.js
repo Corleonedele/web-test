@@ -1,6 +1,10 @@
 import React from 'react'
 import "./page.css"
 import wechat from "../Image/wechat.jpg"
+import Ghost from "../Ghost/index.js"
+import HZX1 from "../Image/hzx-1.jpg"
+import HZX2 from "../Image/hzx-2.jpg"
+import HZX3 from "../Image/hzx-3.jpg"
 
 export default function Page() {
     return (
@@ -22,16 +26,24 @@ export default function Page() {
         </section>
 
         <section id='section2'>
-            <h1>Music and Travel</h1>
-            <p>Ok Temperaly test page</p>
+            <h1>Have a Life</h1>
+            <div id='HZX-container'>
+                <img id='HZX'src={HZX1} />
+                <img id='HZX'src={HZX2} />
+                <img id='HZX'src={HZX3} />
+            </div>
         </section>
 
         <section id='section3'>
             <h1>Contance Me</h1>
-            <img id='contact-wechat-image'
-            src={wechat}/>
+            <p>+86 110</p>
+            <img id='contact-wechat-image'src={wechat}/>
         </section>
-        
+        <nav>
+            <ul>
+                <li> <a>Hello MotherFuckers</a></li>
+            </ul>
+        </nav>
         </body>
     )
 }
