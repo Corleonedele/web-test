@@ -22,7 +22,7 @@ body{
     background-color: #000;
 }
 
-h1{
+.practice1 > h1{
     font-size: 6em;
     font-weight: 500;
     color: #222;
@@ -31,23 +31,23 @@ h1{
     border-radius: 8px;
 }
 
-h1 span{
+.practice1 > h1 span{
     transition: 0.5s;
 }
 
-h1:hover span:nth-child(1){
+.practice1 > h1:hover span:nth-child(1){
     margin-right: 10px;
 }
-h1:hover span:nth-child(1)::after{
+.practice1 > h1:hover span:nth-child(1)::after{
     content: "'";
 }
-h1:hover span:nth-child(2){
+.practice1 > h1:hover span:nth-child(2){
     margin-right: 10px;
 }
-h1:hover span:nth-child(3){
+.practice1 > h1:hover span:nth-child(3){
     margin-left: 40px;
 }
-h1:hover span{
+.practice1 > h1:hover span{
     color: #fff;
     text-shadow: 0 0 10px #fff,
                 0 0 20px #fff,
@@ -94,6 +94,8 @@ nav a.active {
     height: 100vh;
     align-items: center;
 }
+
+
 #section2 {
     background-size: cover;
     height: 200vh;
@@ -117,4 +119,17 @@ section p{
     font-size: 4vh;
     max-width: 70%;
     text-align: center;
+}
+
+.change{
+    transition: 10s;
+    -webkit-transition: 10s;
+}
+
+.not_shown {
+    opacity: 0;
+}
+
+.shown {
+    opacity: 1;
 }
